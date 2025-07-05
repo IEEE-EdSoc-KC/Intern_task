@@ -708,3 +708,11 @@ body {
 section:not(:last-child)::after {
   display: none;
 }
+
+
+.logo-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
