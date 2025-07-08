@@ -312,18 +312,24 @@ function initPropagationEffects() {
     // Force an initial parallax update
     updateParallax();
 }
+
 function seeMore() {
-    let hiddenProjects = document.getElementsByClassName('moreProjects');
-    let btn = document.querySelector('.cta-button');
+    let hiddenProjects = document.querySelectorAll('.moreProject');
+    let btn = document.getElementById('btn')
 
-    // Safely check if the first one is hidden
-    let isHidden = hiddenProjects.length > 0 && (hiddenProjects[0].style.display === 'none' || hiddenProjects[0].style.display === '');
+    // Convert HTMLCollection to Array
+    let hiddenArray = [...hiddenProjects];
 
-    // Show or hide all
-    for (let i = 0; i < hiddenProjects.length; i++) {
-        hiddenProjects[i].style.display = isHidden ? 'block' : 'none';
-    }
+    // Check if hidden
+    let isHidden = hiddenArray.length > 0 &&
+        (hiddenArray[0].style.display === 'none' || hiddenArray[0].style.display === '');
 
-    // Change button text accordingly
-    btn.innerHTML = isHidden ? 'See Less Projects' : 'See More Projects';
+    hiddenArray.forEach(card => {
+        card.style.display = isHidden ? 'block' : 'none';
+    });
+
+        // Toggle button text
+    btn.innerText = isHidden ? 'See Less Projects' : 'See More Projects';
+    console.log("Button content before:", btn.innerText);
 }
+

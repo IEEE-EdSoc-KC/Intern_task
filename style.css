@@ -29,7 +29,6 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    cursor: none;
 }
 
 /* Simple subtle background with minimal gradients */
@@ -752,4 +751,6 @@ section:not(:last-child)::after {
     flex-direction: column;
     align-items: center;
 }
-
+.projectLayout{
+    background-color: red;
+}
