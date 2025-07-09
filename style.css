@@ -360,7 +360,7 @@ section.visible {
 }
 
 .project-card {
-    position: relative;
+   
     display: flex;
     flex-direction: column;
     background: rgba(20, 20, 20, 0.5);
@@ -391,7 +391,7 @@ section.visible {
     margin-bottom: 1rem;
 }
 
-.github-overlay {
+.previewGIt {
     position: absolute;
     right: 0;
     top: 50%;
@@ -400,7 +400,7 @@ section.visible {
     transition: all 0.3s ease;
 }
 
-.github-overlay a {
+.previewGIt a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,13 +413,13 @@ section.visible {
     transition: all 0.3s ease;
 }
 
-.github-overlay a:hover {
+.previewGIt a:hover {
     background: rgba(157, 78, 221, 0.3);
     transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(157, 78, 221, 0.25);
 }
 
-.project-card:hover .github-overlay {
+.project-card:hover .previewGIt {
     opacity: 1;
     right: -10px;
 }
@@ -437,7 +437,7 @@ section.visible {
     }
 }
 
-.project-card:hover .github-overlay a {
+.project-card:hover .previewGIt a {
     animation: pulse 1.5s infinite;
 }
 
