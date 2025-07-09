@@ -358,17 +358,19 @@ section.visible {
     gap: 1.5rem; /* Reduced from 2rem */
     width: 100%;
 }
-
 .project-card {
-   
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    max-width:650px;
+    max-height: 500px;
     background: rgba(20, 20, 20, 0.5);
     border: 1px solid rgba(157, 78, 221, 0.1);
     border-radius: 12px;
-    padding: 1.75rem; /* Reduced from 2rem */
-    margin-bottom: 0; /* Removed bottom margin */
+    padding: 30px;
+    margin-bottom: 0;
     transition: all 0.3s ease;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -383,45 +385,51 @@ section.visible {
     font-size: 1.5rem;
 }
 
-/* Updated Project Cards with hover effect GitHub links */
 .project-header {
-    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
 
+/* Tech stack and description styling */
+.project-card p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
 .previewGIt {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: all 0.3s ease;
+    display: flex;
+    gap: 16px; /* Space between icons */
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    width: 100%;
 }
 
 .previewGIt a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 12px; /* Softer corners that still maintain visual distinction */
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
     background: rgba(157, 78, 221, 0.15);
     color: var(--accent-light);
     font-size: 1.25rem;
     transition: all 0.3s ease;
 }
 
+/* Hover effect for links */
 .previewGIt a:hover {
     background: rgba(157, 78, 221, 0.3);
     transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(157, 78, 221, 0.25);
 }
-
-.project-card:hover .previewGIt {
-    opacity: 1;
-    right: -10px;
+.linkText{
+    gap:10px;
+    padding:1rem;
 }
 
 /* Add this animation for a more dynamic effect */
