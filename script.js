@@ -323,10 +323,10 @@ function seeMore() {
     // Check if hidden
     let isHidden = hiddenArray.length > 0 &&
         (hiddenArray[0].style.display === 'none' || hiddenArray[0].style.display === '');
-
     hiddenArray.forEach(card => {
         card.style.display = isHidden ? 'block' : 'none';
     });
+
 
         // Toggle button text
     btn.innerText = isHidden ? 'See Less Projects' : 'See More Projects';
