@@ -148,8 +148,8 @@ header.scrolled {
     position: relative;
     font-weight: 500;
     letter-spacing: 0.5px;
-    padding: 0.5rem 0;
-    color: var(--text-primary); /* Brighter color for better visibility */
+    padding: 10px;
+    max-width: 300px;
     transition: color 0.3s ease;
 }
 
@@ -158,28 +158,25 @@ header.scrolled {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
+
+    max-width: 500px;
     height: 2px;
     background: linear-gradient(to right, var(--accent), var(--accent-light));
-    transition: width 0.3s ease;
+    transition: height 0.3s ease;
+    border-radius: 10px;
+    z-index: -10;
+    color: black
 }
 
 .nav-links a:hover {
-    color: var(--accent-light);
+   color: black;
 }
 
 .nav-links a:hover::after {
+    height: 100%;
     width: 100%;
 }
 
-/* Active link styling */
-.nav-links a.active {
-    color: var(--accent-light);
-}
-
-.nav-links a.active::after {
-    width: 100%;
-}
 
 /* Sections */
 section {
@@ -277,7 +274,7 @@ section.visible {
 /* Updated CTA button with softer corners */
 .cta-button {
     display: inline-block;
-    padding:auto;
+
     background: var(--accent);
     color: var(--bg-primary);
     font-weight: 600;
@@ -358,11 +355,12 @@ section.visible {
     gap: 1.5rem; /* Reduced from 2rem */
     width: 100%;
 }
+
 .project-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width:650px;
+    max-width: 650px;
     max-height: 500px;
     background: rgba(20, 20, 20, 0.5);
     border: 1px solid rgba(157, 78, 221, 0.1);
@@ -437,6 +435,7 @@ section.visible {
 .action-btn:hover::before {
     left: 100%;
 }
+
 /* Add this animation for a more dynamic effect */
 @keyframes pulse {
     0% {
@@ -764,6 +763,7 @@ section:not(:last-child)::after {
     flex-direction: column;
     align-items: center;
 }
-.projectLayout{
+
+.projectLayout {
     background-color: red;
 }
