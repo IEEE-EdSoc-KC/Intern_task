@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATHEW GEEJO - ARCADE PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- CRT Overlay -->
+    <div class="crt-overlay"></div>
+    
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-text">INITIALIZING ARCADE...</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="arcade-header">
+        <nav class="arcade-nav">
+            <div class="logo">MATHEW.EXE</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-btn">HOME</a></li>
+                <li><a href="#about" class="nav-btn">ABOUT</a></li>
+                <li><a href="#projects" class="nav-btn">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-btn">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">MATHEW GEEJO</h1>
+                <p class="hero-subtitle">FULL STACK DEVELOPER</p>
+                <p style="font-size: 0.8rem; color: var(--neon-cyan); margin-bottom: 2rem;">
+                    > Building elegant solutions through code<br>
+                    > Ready to level up your project
+                </p>
+                <div class="arcade-buttons">
+                    <a href="#projects" class="arcade-btn">PLAY GAME</a>
+                    <a href="#contact" class="arcade-btn">INSERT COIN</a>
+                </div>
+            </div>
+            <div class="arcade-display">
+                <div class="screen">
+                    <div class="pixel-art"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">PLAYER STATS</h2>
+            <div style="font-size: 0.8rem; line-height: 1.6; color: var(--neon-cyan); text-align: center; margin-bottom: 2rem;">
+                > Full Stack Developer specializing in AI and web technologies<br>
+                > Experience in GenAI platforms, merit-based networking, and modern web apps<br>
+                > Passionate about creating innovative solutions through cutting-edge technology
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JAVASCRIPT</div>
+                <div class="skill-item">PYTHON</div>
+                <div class="skill-item">JAVA</div>
+                <div class="skill-item">NODE.JS</div>
+                <div class="skill-item">FLASK</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">GIT</div>
+                <div class="skill-item">PROJECT MGMT</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">GAME LIBRARY</h2>
+            <div class="projects-container">
+                <div class="project-cabinet">
+                    <div class="project-screen"></div>
+                    <div class="project-title">FYUGP GENAI</div>
+                    <div class="project-desc">Advanced AI platform for Four Year Undergraduate Program with GenAI capabilities</div>
+                    <div class="project-tech">Python • AI/ML • Flask • React</div>
+                    <a href="https://github.com/mathewgeejo/fyugp-GenAI" target="_blank" class="project-link">VIEW CODE</a>
+                </div>
+
+                <div class="project-cabinet">
+                    <div class="project-screen"></div>
+                    <div class="project-title">FYUGP GENAI V2</div>
+                    <div class="project-desc">Enhanced version of the AI platform with improved features and performance</div>
+                    <div class="project-tech">Python • Advanced AI • Machine Learning</div>
+                    <a href="https://github.com/mathewgeejo/fyugp-GenAI" target="_blank" class="project-link">VIEW CODE</a>
+                </div>
+
+                <div class="project-cabinet">
+                    <div class="project-screen"></div>
+                    <div class="project-title">EDUSYNC</div>
+                    <div class="project-desc">Merit-based professional networking platform - LinkedIn alternative focused on achievements</div>
+                    <div class="project-tech">Node.js • React • MongoDB • Authentication</div>
+                    <a href="https://github.com/mathewgeejo/edusync" target="_blank" class="project-link">VIEW CODE</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">CONNECT TERMINAL</h2>
+            <div class="contact-terminal">
+                <div class="terminal-header">
+                    > ESTABLISHING CONNECTION...<br>
+                    > STATUS: ONLINE<br>
+                    > READY FOR COLLABORATION
+                </div>
+                <div class="terminal-content">
+                    > Feel free to reach out for collaborations<br>
+                    > Available for new opportunities<br>
+                    > Let's build something amazing together!
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/mathewgeejo" class="social-btn" target="_blank">G</a>
+                    <a href="https://www.linkedin.com/in/mathewgeejo" class="social-btn" target="_blank">L</a>
+                    <a href="mailto:mathewgeejo@gmail.com" class="social-btn">M</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
